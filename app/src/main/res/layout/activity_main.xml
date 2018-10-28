@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/holo_purple"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconcalculator"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:onClick="calculatorIconClicked"
+                        android:src="@drawable/calculatoricon">
+
+                    </ImageButton>
+
+                    <TextView
+
+                        android:id="@+id/calculator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconcalculator"
+                        android:clickable="true"
+                        android:onClick="calculatorIconClicked"
+                        android:text="Calculator"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconcamera"
+                        android:layout_width="199dp"
+                        android:layout_height="160dp"
+                        android:layout_column="2"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:onClick="onCamera"
+                        android:src="@drawable/cameraicon">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconcamera"
+                        android:onClick="onCamera"
+                        android:text="Camera"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconcalendar"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:onClick="onCalender"
+                        android:src="@drawable/calendaricon">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/calender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconcalendar"
+                        android:onClick="onCalender"
+                        android:text="Calendar"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/icongallery"
+                        android:layout_width="199dp"
+                        android:layout_height="160dp"
+                        android:layout_column="2"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:onClick="galleryIconClicked"
+                        android:src="@drawable/galleryicon">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/icongallery"
+                        android:onClick="galleryIconClicked"
+                        android:text="Gallery"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconclock"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:onClick="clockIconClicked"
+                        android:src="@drawable/clockicon">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/clock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconclock"
+                        android:onClick="clockIconClicked"
+                        android:text="Clock"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconbrowser"
+                        android:layout_width="199dp"
+                        android:layout_height="160dp"
+                        android:layout_column="2"
+                        android:background="@android:color/transparent"
+                        android:onClick="browserIconClicked"
+                        android:src="@drawable/browsericon">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/browser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconbrowser"
+                        android:onClick="browserIconClicked"
+                        android:text="Browser"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconyoutube"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:background="@android:color/transparent"
+                        android:onClick="youtubeIconClicked"
+                        android:src="@drawable/youtubeicon" />
+
+                    <TextView
+                        android:id="@+id/youtube"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconyoutube"
+                        android:onClick="youtubeIconClicked"
+                        android:text="Youtube"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/iconfilemanager"
+                        android:layout_width="199dp"
+                        android:layout_height="160dp"
+                        android:layout_column="2"
+                        android:background="@android:color/transparent"
+                        android:onClick="onFilemanager"
+                        android:src="@drawable/filemanagericon">
+
+                    </ImageButton>
+
+                    <TextView
+                        android:id="@+id/filemanager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iconfilemanager"
+                        android:onClick="onFilemanager"
+                        android:text="Filemanager"
+                        android:textAlignment="center"
+                        android:textSize="20sp">
+
+                    </TextView>
+                </RelativeLayout>
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</LinearLayout>
